@@ -47,6 +47,7 @@ public class FPSPlayerController : MonoBehaviour
     private static readonly int HashIsCouch = Animator.StringToHash("isCouch");
     private static readonly int HashIsAir = Animator.StringToHash("isAir");
     private static readonly int HashJump = Animator.StringToHash("Jump");
+    private static readonly int HashIsWaC = Animator.StringToHash("isWalkAndCrouch");
 
     private float footstepTimer = 0f;
 
@@ -132,8 +133,10 @@ public class FPSPlayerController : MonoBehaviour
         verticalVelocity += gravity * Time.deltaTime;
 
         // Tek cc.Move — yatay + dikey birleşik
-        Vector3 finalMove = lockedHorizontalVelocity + Vector3.up * verticalVelocity;
-        cc.Move(finalMove * Time.deltaTime);
+        Vector3 move = lockedHorizontalVelocity;
+        move.y = verticalVelocity;
+
+        cc.Move(move * Time.deltaTime);
 
         // ── DÜZELTME 2: Animator — tuş bırakılınca ANINDA idle ──
         // hasInput false olduğu anda isWalk ve isRun false → blend tree idle'a döner
@@ -141,6 +144,7 @@ public class FPSPlayerController : MonoBehaviour
         anim.SetBool(HashIsRun, hasInput && isRunning && isGrounded);
         anim.SetBool(HashIsAir, !isGrounded);
         anim.SetBool(HashIsCouch, isCrouching);
+        anim.SetBool(HashIsWaC, hasInput && isCrouching && isGrounded);
 
         wasGrounded = isGrounded;
     }
