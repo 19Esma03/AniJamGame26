@@ -8,6 +8,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 503402301073661369, guid: 4c75ec8959bcf474a8fc27a62add1b5b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 503402301073661369, guid: 4c75ec8959bcf474a8fc27a62add1b5b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 503402301073661369, guid: 4c75ec8959bcf474a8fc27a62add1b5b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 503402301073661369, guid: 4c75ec8959bcf474a8fc27a62add1b5b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 503402301073661369, guid: 4c75ec8959bcf474a8fc27a62add1b5b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178780404369070976, guid: 4c75ec8959bcf474a8fc27a62add1b5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3984599150578465730, guid: 4c75ec8959bcf474a8fc27a62add1b5b, type: 3}
       propertyPath: m_Name
       value: mirrorA Variant
