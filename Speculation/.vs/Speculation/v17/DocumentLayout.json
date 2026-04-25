@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{81C9BD78-4A51-C89E-1903-12B9C25A5A64}|Assembly-CSharp.csproj|c:\\users\\esman\\onedrive\\masa\u00FCst\u00FC\\anijam2026\\anijamgame26\\speculation\\assets\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81C9BD78-4A51-C89E-1903-12B9C25A5A64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{81C9BD78-4A51-C89E-1903-12B9C25A5A64}|Assembly-CSharp.csproj|c:\\users\\esman\\onedrive\\masa\u00FCst\u00FC\\anijam2026\\anijamgame26\\speculation\\assets\\scripts\\fpsplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81C9BD78-4A51-C89E-1903-12B9C25A5A64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fpsplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\Main.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Main.cs",
+              "ToolTip": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\Main.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T21:20:58.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FpsPlayerController.cs",
               "DocumentMoniker": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\FpsPlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FpsPlayerController.cs",
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerMove.cs",
               "DocumentMoniker": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\PlayerMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MirrorShader.shader",
               "DocumentMoniker": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\MirrorShader.shader",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MirrorShader.shader",
@@ -66,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MirrrorScript.cs",
               "DocumentMoniker": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\MirrrorScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MirrrorScript.cs",
