@@ -37,6 +37,8 @@ public class MirrorScript : MonoBehaviour
 
             // Sadece Y eksenindeki açýyý al, X ve Z'yi 0'la
             transform.rotation = Quaternion.Euler(0, targetRotation.eulerAngles.y, 0);
+
         }
+
     }
 }
