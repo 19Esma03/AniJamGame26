@@ -6,45 +6,37 @@ public class MirrorScript : MonoBehaviour
     public Transform mirrorPlane; // Sahnedeki Quad
     public Camera playerCam;      // Main Camera
 
+    private Vector3 initialPosition;
+
     void Start()
     {
         if (playerCam == null) playerCam = Camera.main;
 
-        // Ölçek Kontrolü (Hata Önleyici)
-        if (mirrorPlane != null)
-        {
-            Vector3 scale = mirrorPlane.localScale;
-            if (scale.x == 0 || scale.y == 0 || scale.z == 0)
-            {
-                Debug.LogWarning("Guts, Quad'ýn ölçeði 0 olamaz! Otomatik olarak 1 yapýldý.");
-                mirrorPlane.localScale = new Vector3(
-                    scale.x == 0 ? 1 : scale.x,
-                    scale.y == 0 ? 1 : scale.y,
-                    scale.z == 0 ? 1 : scale.z
-                );
-            }
-        }
+        // Kameranýn editörde koyduðun ilk yerini kaydet
+        initialPosition = transform.position;
     }
 
     void LateUpdate()
     {
         if (playerCam == null || mirrorPlane == null) return;
 
-        // 1. DÜNYA KOORDÝNATLARINDA POZÝSYON (Planar Reflection Math)
-        // Oyuncunun aynaya olan dik uzaklýðýný ve yönünü bulur
-        Vector3 playerPos = playerCam.transform.position;
-        Vector3 planePos = mirrorPlane.position;
-        Vector3 planeNormal = mirrorPlane.forward; // Quad'ýn ön yüzü
+        // 1. KONUMU SABÝTLE (Kamera yerinden oynamaz)
+        transform.position = initialPosition;
 
-        // Formül: P_refl = P - 2 * (n * (P - P_plane)) * n
-        float distance = Vector3.Dot(planeNormal, playerPos - planePos);
-        Vector3 reflectedPos = playerPos - 2 * distance * planeNormal;
+        // 2. Y EKSENÝNDE DÖNÜÞ (Sadece Saða-Sola)
+        // Oyuncunun pozisyonuna doðru bir yön vektörü oluþtur
+        Vector3 directionToPlayer = playerCam.transform.position - transform.position;
 
-        transform.position = reflectedPos;
+        // Yüksekliði (yukarý-aþaðý bakýþý) iptal et, sadece yatay düzleme odaklan
+        directionToPlayer.y = 0;
 
-        // 2. DÜNYA KOORDÝNATLARINDA ROTASYON
-        // Oyuncunun bakýþ yönünü aynanýn normaline göre sektirir
-        Vector3 lookDir = Vector3.Reflect(playerCam.transform.forward, planeNormal);
-        transform.rotation = Quaternion.LookRotation(lookDir, mirrorPlane.up);
+        if (directionToPlayer != Vector3.zero)
+        {
+            // Bu yöne bakacak rotasyonu hesapla
+            Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
+
+            // Sadece Y eksenindeki açýyý al, X ve Z'yi 0'la
+            transform.rotation = Quaternion.Euler(0, targetRotation.eulerAngles.y, 0);
+        }
     }
 }

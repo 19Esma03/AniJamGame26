@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\esman\\onedrive\\masa\u00FCst\u00FC\\anijam2026\\anijamgame26\\speculation\\assets\\scripts\\mirrorshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\mirrorshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81C9BD78-4A51-C89E-1903-12B9C25A5A64}|Assembly-CSharp.csproj|C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\assets\\scripts\\mirrrorscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81C9BD78-4A51-C89E-1903-12B9C25A5A64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mirrrorscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\MirrorShader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\MirrorShader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MirrorShader.shader",
               "DocumentMoniker": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\MirrorShader.shader",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MirrorShader.shader",
               "ToolTip": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\MirrorShader.shader",
               "RelativeToolTip": "Assets\\Scripts\\MirrorShader.shader",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-04-24T23:57:47.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T23:57:47.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MirrrorScript.cs",
               "DocumentMoniker": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\MirrrorScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MirrrorScript.cs",
               "ToolTip": "C:\\Users\\esman\\OneDrive\\Masa\u00FCst\u00FC\\AniJam2026\\AniJamGame26\\Speculation\\Assets\\Scripts\\MirrrorScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\MirrrorScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwC8AAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T23:01:17.471Z"
+              "WhenOpened": "2026-04-24T23:01:17.471Z",
+              "EditorCaption": ""
             }
           ]
         }
