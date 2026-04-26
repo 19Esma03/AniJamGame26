@@ -13,5 +13,6 @@ public class Main : MonoBehaviour
     private void SpawnIt()
     {
         Instantiate(PlayerPref, spawnPoint.position, spawnPoint.rotation);
+        PlayerPref.SetActive(true);
     }
 }
